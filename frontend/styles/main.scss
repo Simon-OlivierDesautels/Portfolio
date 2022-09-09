@@ -1,0 +1,64 @@
+/*
+-----SETTINGS-----
+Used with preprocessors and contain font, colors definitions, etc.
+*/
+
+@use "./scss/settings/color.scss";
+@use "./scss/settings/fonts.scss";
+/*
+-----TOOLS-----
+Globally used mixins and functions. 
+It’s important not to output any CSS in the first 2 layers.
+*/
+
+/*
+-----GENERIC-----
+Reset and/or normalize styles, box-sizing definition, etc. 
+This is the first layer which generates actual CSS.
+*/
+
+@use "./scss/generic/normalize.scss";
+@use "./scss/generic/reset.scss";
+
+/*
+-----ELEMENTS-----
+Styling for bare HTML elements (like H1, A, etc.). 
+These come with default styling from the browser so we can redefine them here.
+*/
+
+@use "./scss/elements/body.scss";
+@use "./scss/elements/content.scss";
+@use "./scss/elements/headings.scss";
+@use "./scss/elements/text.scss";
+@use "./scss/elements/nav.scss";
+@use "./scss/elements/ul.scss";
+
+/*
+-----OBJECTS-----
+Class-based selectors which define undecorated design patterns,
+for example the media object known from OOCSS
+*/
+
+
+/*
+-----COMPONENTS-----
+Specific UI components. This is where most of our work takes place.
+We often compose UI components of Objects and Components
+*/
+@use "./scss/components/wrapper.scss";
+@use "./scss/components/bloc.scss";
+@use "./scss/components/contact-info.scss";
+@use "./scss/components/nav-item.scss";
+@use "./scss/components/skills.scss";
+@use "./scss/components/skills-list.scss";
+@use "./scss/components/experience.scss";
+@use "./scss/components/projects-nav.scss";
+@use "./scss/components/projects-list.scss";
+@use "./scss/components/project.scss";
+
+/*
+-----UTILITIES-----
+Utilities and helper classes with ability to override anything which goes before
+in the triangle, e.g. hide helper class
+*/
+

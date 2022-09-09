@@ -1,18 +1,23 @@
 import type { NextPage } from "next";
 
-// import styles from "../styles/Home.module.css";
-// import styles from "../styles/test.scss";
-import { Navbar, About, Projects, Skills, Contact } from "../components/index";
+import {
+  Navbar,
+  About,
+  Projects,
+  Skills,
+  Contact,
+  Front
+} from "../components/index";
 
 const Home: NextPage = () => {
   return (
-    <div className="">
-      <h1>Simon-Olivier Desautels</h1>
+    <div className="contents">
+      <Front />
       <Navbar />
-      <About/>
-      <Projects/>
-      <Skills/>
-      <Contact/>
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
     </div>
   );
 };

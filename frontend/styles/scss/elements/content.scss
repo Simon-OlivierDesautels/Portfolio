@@ -1,0 +1,11 @@
+@import "../settings/color.scss";
+
+.contents{
+    div.content{
+        padding: 9rem 0;
+
+    }
+    div.content:nth-child(2n){
+        background-color:$color-dark-bg;
+    }
+}

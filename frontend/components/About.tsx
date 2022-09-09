@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div className="content" >
+      <div className="wrapper bloc" id="about">
+        <h2>About</h2>
+      </div>
+    </div>
+  );
+};

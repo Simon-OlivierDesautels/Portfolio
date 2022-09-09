@@ -1,0 +1,9 @@
+.projects-list{
+    margin: 8rem 0 0 0;
+
+    min-height: 500px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
